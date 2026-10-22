@@ -1,0 +1,244 @@
+
+/* Basic settings for the whole website */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Website heading area */
+header {
+    background-color: #244a8f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #173366;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Main content area */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Individual content sections */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    color: #244a8f;
+    margin-top: 0;
+}
+
+/* Bottom of the website */
+footer {
+    background-color: #173366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adjust the website for small screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+
+/* Introduction to the resources section */
+.section-intro {
+    color: #5f6b7a;
+    margin-bottom: 25px;
+}
+
+/* Container for all three resource cards */
+.resource-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Individual resource card */
+.resource-card {
+    background-color: #f8faff;
+    padding: 22px;
+    border: 1px solid #e1e8f5;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Small icon at the top of each card */
+.resource-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Card headings */
+.resource-card h3 {
+    color: #244a8f;
+    margin-top: 0;
+}
+
+/* Card paragraphs */
+.resource-card p {
+    margin-bottom: 0;
+    color: #526071;
+}
+
+/* Subtle effect when a mouse moves over a card */
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(36, 74, 143, 0.12);
+}
+
+/* Stack cards on smaller screens */
+@media (max-width: 700px) {
+    .resource-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Contact form layout */
+#contact-form {
+    max-width: 650px;
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #263238;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #244a8f;
+    border-color: #244a8f;
+}
+
+#contact-form button {
+    background-color: #244a8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #173366;
+}
+
+#form-feedback {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* Social media links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: white;
+    color: #173366;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: #ffd166;
+    color: #173366;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+
+#form-feedback {
+    margin-top: 15px;
+    padding: 10px;
+    color: #173366;
+    font-weight: bold;
+}
+
+#form-feedback:empty {
+    display: none;
+}
